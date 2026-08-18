@@ -291,7 +291,7 @@ shorebird upgrade
 
 ## 📚 لينكات هتفيدك
 
-- [التوثيق الرسمي](https://docs.shorebird.dev)
+- [Shorebird](https://docs.shorebird.dev)
 - [Shorebird Console](https://console.shorebird.dev)
 - [GitHub بتاع Shorebird](https://github.com/shorebirdtech/shorebird)
 

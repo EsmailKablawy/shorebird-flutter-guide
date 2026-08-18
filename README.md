@@ -305,7 +305,6 @@ shorebird upgrade
 ---
 
 ## **▶️ للتواصل 📱**
-
 <p align="start">
   <a href="mailto:esmail.o.kablawy@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
@@ -314,5 +313,4 @@ shorebird upgrade
     <img src="https://img.shields.io/badge/LinkedIn-%230177B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
 </p>
-
 

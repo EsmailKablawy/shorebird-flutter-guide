@@ -293,7 +293,7 @@ shorebird upgrade
 
 - [Shorebird](https://docs.shorebird.dev)
 - [Shorebird Console](https://console.shorebird.dev)
-- [GitHub بتاع Shorebird](https://github.com/shorebirdtech/shorebird)
+- [Shorebird GitHub](https://github.com/shorebirdtech/shorebird)
 
 </div>
 

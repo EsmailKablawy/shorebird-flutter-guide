@@ -2,7 +2,7 @@
 
 #  تحديث التطبيق من غير ما تستنى المتجر
 
-**تظبط باج أو تعدّل حاجة، وتوصّلها لليوزرز في دقايق — من غير ما تستنى المراجعة.**
+**عن طريق الـ Code Push، تقدر تعدّل الـ UI أو اللوجيك بتاعك وتحل الباجات — ويوصل لليوزر على طول من غير ما تستنى المراجعة**
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Shorebird](https://img.shields.io/badge/Shorebird-Code_Push-4A90E2?style=for-the-badge)

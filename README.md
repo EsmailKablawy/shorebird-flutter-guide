@@ -13,6 +13,8 @@
 
 ---
 
+<div dir="rtl">
+
 ## 🐦 إيه هي Shorebird أصلًا؟
 
 باختصار كده، Shorebird خدمة بتخليك تبعت تحديثات لكود الـ Dart بتاعك **على طول لأجهزة اليوزرز**، من غير ما تعدّي على مراجعة المتجر ولا ترفع نسخة جديدة.
@@ -33,12 +35,37 @@
 
 Shorebird بتختصر ده كله:
 
-| | من غير Code Push | مع Shorebird |
-|---|:---:|:---:|
-| التحديث بيوصل امتى | أيام (مراجعة المتجر) | دقايق |
-| محتاج ترفع للمتجر؟ | آه، كل مرة | لأ |
-| اليوزر بيعمل update بإيده؟ | آه | لأ، بيتم لوحده |
-| حل الباجات المستعجلة | بطيء | فوري |
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th align="center">من غير Code Push</th>
+<th align="center">مع Shorebird</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>التحديث بيوصل امتى</td>
+<td align="center">أيام (مراجعة المتجر)</td>
+<td align="center">دقايق</td>
+</tr>
+<tr>
+<td>محتاج ترفع للمتجر؟</td>
+<td align="center">آه، كل مرة</td>
+<td align="center">لأ</td>
+</tr>
+<tr>
+<td>اليوزر بيعمل update بإيده؟</td>
+<td align="center">آه</td>
+<td align="center">لأ، بيتم لوحده</td>
+</tr>
+<tr>
+<td>حل الباجات المستعجلة</td>
+<td align="center">بطيء</td>
+<td align="center">فوري</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
@@ -80,16 +107,24 @@ Shorebird بتختصر ده كله:
 
 **لو على macOS / Linux:**
 
+</div>
+
 ```bash
 curl --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/shorebirdtech/install/main/install.sh -sSf | bash
 ```
 
+<div dir="rtl">
+
 **لو على Windows (PowerShell):**
+
+</div>
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr -UseBasicParsing 'https://raw.githubusercontent.com/shorebirdtech/install/main/install.ps1' | iex
 ```
+
+<div dir="rtl">
 
 > 💡 الأمر ده بينزّل Shorebird ومعاها نسخة Flutter مخصوصة بتدعم Code Push، منفصلة تمامًا عن نسخة Flutter العادية اللي عندك.
 
@@ -97,17 +132,25 @@ iwr -UseBasicParsing 'https://raw.githubusercontent.com/shorebirdtech/install/ma
 
 اقفل الـ Terminal وافتحه تاني، وبعدين شغّل:
 
+</div>
+
 ```bash
 shorebird doctor
 ```
+
+<div dir="rtl">
 
 المفروض تشوف في الآخر: `No issues detected!`
 
 ### 4. سجّل دخول
 
+</div>
+
 ```bash
 shorebird login
 ```
+
+<div dir="rtl">
 
 هيفتحلك المتصفح عشان تسجّل — ادخل بنفس الحساب اللي عملته، وبعدين ارجع للـ Terminal.
 
@@ -117,9 +160,13 @@ shorebird login
 
 من جوه فولدر مشروعك، شغّل:
 
+</div>
+
 ```bash
 shorebird init
 ```
+
+<div dir="rtl">
 
 الأمر ده هيعمل الآتي:
 
@@ -137,6 +184,8 @@ shorebird init
 
 دي النسخة الأساسية اللي بترفعها للمتجر. بتتبني بأمر Shorebird (مش `flutter build`):
 
+</div>
+
 ```bash
 # لـ Android
 shorebird release android
@@ -145,11 +194,15 @@ shorebird release android
 shorebird release ios
 ```
 
+<div dir="rtl">
+
 بعد ما يخلّص، بترفع الملف الناتج (`.aab` لأندرويد، `.ipa` لـ iOS) على المتجر بإيدك — من Google Play Console، أو App Store Connect / [Transporter](https://apps.apple.com/us/app/transporter/id1450874784).
 
 ### تاني خطوة: تبعت Patch
 
 بعد ما الإصدار يبقى عند اليوزرز، أي تعديل في كود Dart تقدر تبعته على طول:
+
+</div>
 
 ```bash
 # لـ Android
@@ -159,15 +212,21 @@ shorebird patch android
 shorebird patch --platforms=ios --release-version=<رقم_الإصدار>
 ```
 
+<div dir="rtl">
+
 Shorebird هيبني الـ patch، ويقارنه بالإصدار الأصلي، ويطلب منك تأكيد، وبعدين ينشره. ✅
 
 ### التحديث بيوصل لليوزر إزاي؟
 
 التحديث بينزّل في الخلفية، وبيبان في **تاني مرة** يفتح فيها التطبيق:
 
+</div>
+
 ```
 يفتح التطبيق (بينزّل الـ patch)  ←  يقفل التطبيق  ←  يفتحه تاني (التحديث بان) ✅
 ```
+
+<div dir="rtl">
 
 ---
 
@@ -176,29 +235,47 @@ Shorebird هيبني الـ patch، ويقارنه بالإصدار الأصلي
 - **خلي رقم الـ Build متطابق:** لازم رقم الـ build اللي Shorebird بتبنيه يبقى مطابق للرقم اللي متثبّت على جهاز اليوزر. لو مش متطابقين، الـ patch مش هيوصل. دي نقطة الناس بتقع فيها كتير.
 
 - **حدّد نسخة Flutter بنفسك:** استخدم `--flutter-version` مع أمر الـ `release` عشان تضمن الاستقرار وإن الـ patches تتطابق مع الإصدار:
-  ```bash
-  shorebird release ios --flutter-version=3.x.x
-  ```
-  > الـ Patch بياخد أوتوماتيك نفس نسخة Flutter بتاعة الإصدار اللي بيستهدفه، فمش محتاج تحددها فيه تاني.
+
+</div>
+
+```bash
+shorebird release ios --flutter-version=3.x.x
+```
+
+<div dir="rtl">
+
+> الـ Patch بياخد أوتوماتيك نفس نسخة Flutter بتاعة الإصدار اللي بيستهدفه، فمش محتاج تحددها فيه تاني.
 
 - **لو بتستخدم ملفات بيئة، متنساش تبعتها:** لو مشروعك بيعتمد على env file، لازم تبعته مع الـ `release` والـ `patch` بنفس الطريقة:
-  ```bash
-  shorebird release ios -- --dart-define-from-file=env/config.json
-  shorebird patch --platforms=ios --release-version=<الرقم> -- --dart-define-from-file=env/config.json
-  ```
+
+</div>
+
+```bash
+shorebird release ios -- --dart-define-from-file=env/config.json
+shorebird patch --platforms=ios --release-version=<الرقم> -- --dart-define-from-file=env/config.json
+```
+
+<div dir="rtl">
 
 - **الـ Patch لـ Dart بس:** أي تعديل في الكود الـ native، أو الملفات (assets)، أو أيقونة التطبيق، أو الصلاحيات — كل ده لازمله Release جديد.
 
 - **جرّب قبل ما تنشر:** استخدم `shorebird preview` عشان تجرّب الإصدار على جهاز حقيقي قبل ما ترفعه.
 
 - **حدّث الـ CLI من وقت للتاني:**
-  ```bash
-  shorebird upgrade
-  ```
+
+</div>
+
+```bash
+shorebird upgrade
+```
+
+<div dir="rtl">
 
 ---
 
 ## 🔄 الخلاصة في سطرين
+
+</div>
 
 ```
 مرة واحدة لكل إصدار:
@@ -208,6 +285,8 @@ Shorebird هيبني الـ patch، ويقارنه بالإصدار الأصلي
   تعدّل كود Dart → shorebird patch → يوصل لليوزرز لوحده 🎉
 ```
 
+<div dir="rtl">
+
 ---
 
 ## 📚 لينكات هتفيدك
@@ -215,6 +294,8 @@ Shorebird هيبني الـ patch، ويقارنه بالإصدار الأصلي
 - [التوثيق الرسمي](https://docs.shorebird.dev)
 - [Shorebird Console](https://console.shorebird.dev)
 - [GitHub بتاع Shorebird](https://github.com/shorebirdtech/shorebird)
+
+</div>
 
 ---
 

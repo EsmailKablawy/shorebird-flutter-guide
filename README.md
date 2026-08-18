@@ -301,11 +301,10 @@ shorebird upgrade
 ---
 
 💬 **Created by:** [Esmail Osama Ismail](https://github.com/yourusername)  
-❤️ Flutter Developer | Passionate about Clean UI & Real-time Apps
 
 ---
 
-## **▶️ Contact 📱**
+## **▶️ للتواصل 📱**
 
 <p align="start">
   <a href="mailto:esmail.o.kablawy@gmail.com">
